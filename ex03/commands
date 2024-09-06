@@ -1,0 +1,4 @@
+docker run -d --network bridge --ip 172.17.0.4 --name con1 custubuntu:compose
+docker run -d --network bridge --ip 172.17.0.5 --name con2 custubuntu:compose
+
+This would be a touch work to map the ip's and name and update all the cotnainers hosts file.

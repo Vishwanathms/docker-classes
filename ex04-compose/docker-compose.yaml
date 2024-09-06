@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    image: stackdemo:v1
+    build: 
+      context: ./
+      dockerfile: Dockerfile-web
+    ports:
+      - "9000-9002:8000"
+  redis:
+    image: redis:alpine

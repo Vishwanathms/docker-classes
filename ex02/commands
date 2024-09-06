@@ -1,0 +1,10 @@
+#!/bin/bash
+
+docker rm con1 -f
+docker rmi cust1ubuntu:v1 -f
+docker build -t cust1ubuntu:v1 . 
+docker run  -d --name con1 cust1ubuntu:v1
+
+#docker run  -d --name con2 cust1ubuntu:v1 
+
+  
